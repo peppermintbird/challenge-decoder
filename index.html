@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:site_name" content="Night Cipher">
+  <meta property="og:type" content="website">
+  <title>Night Decoder</title>
+  <link rel="icon" href="assets/favicon_lit_lantern.ico" type="image/x-icon">
+  <link rel="stylesheet" href="source_code/background_art.css" type="text/css">
+  <script src="source_code/index_background_stars.js" defer></script>
+  <link rel="preconnect" src="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="source_code/mobile_responsiveness.css" type="text/css">
+  <link rel="preconnect" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTjLfR5thd2p?utm_source=generator">
+  
+  
+  
+  <!--I want this to be a calming page, even if I have to make an encoder/decoder.
+      Things got a bit clunky along the way, though.
+  If anyone of the ONE/Alura team is seeing this, thank you very much for sharing your knowledge! Forever grateful ❤️ -->
+
+
+  
+</head>
+<body>
+  <main>
+    <section>
+      <nav>
+        <link rel="preconnect" src="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="source_code/social_buttons.css" type="text/css">
+        <link rel="stylesheet" href="source_code/codepen_icon_styles.css" type="text/css">
+          <div class="sky">
+            <div class="stars"></div>
+              <div class="social-buttons" :hover>
+                <!-- add github -->
+              </div>
+              <div class="codepen-icon" :hover>
+                <div class="codepen-icon-circle" onclick="window.location.href='https://codepen.io/peppermintbird/pen/WNWrymO'">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" height="30px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffefa" d="M502.3 159.7l-234-156c-8-4.9-16.5-5-24.6 0l-234 156C3.7 163.7 0 170.8 0 178v156c0 7.1 3.7 14.3 9.7 18.3l234 156c8 4.9 16.5 5 24.6 0l234-156c6-4 9.7-11.1 9.7-18.3V178c0-7.1-3.7-14.3-9.7-18.3zM278 63.1l172.3 114.9-76.9 51.4L278 165.7V63.1zm-44 0v102.6l-95.4 63.7-76.9-51.4L234 63.1zM44 219.1l55.1 36.9L44 292.8v-73.7zm190 229.7L61.7 334l76.9-51.4L234 346.3v102.6zm22-140.9l-77.7-52 77.7-52 77.7 52-77.7 52zm22 140.9V346.3l95.4-63.7 76.9 51.4L278 448.8zm190-156l-55.1-36.9L468 219.1v73.7z"/></svg>
+                </div>
+              </div>
+              <div class="spotify-playlist">
+                <iframe style="border: radius 12px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTjLfR5thd2p?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+              <div class="glowing-lantern">
+                <link rel="stylesheet" href="source_code/lit_lantern_animation.css">
+                <img style="width: 100%; height: 90%" src="assets\normal-pixel-lantern.png" alt="pixeled drawing of an old-style lantern">
+              </div>
+              <!--
+                THE EN-DECODER
+              -->
+              <nav class="header">  
+                <div>
+                  <link rel="stylesheet" href="source_code/header_styles.css" type="text/css">
+                  <link rel="stylesheet" href="source_code/night-decoder-title-shadow-animation.css" type="text/css">
+                    <h1 class= "heading text-shadow-drop-center" id="night-decoder-title">NIGHT DECODER</h1>
+                    <div class="quote-card"><p class="quote">In the deep darkness, don't feel alone. <br> <br> As the stars shine, they send to you a message, saying, <i>"Everything will be alright."</i><br> <br>© 2024 <a href="https://github.com/peppermintbird" style="color: #f0eaeac9; text-decoration: none; transition: color 0.3s ease;"> peppermintbird</a></p></div>
+                </div>
+              </nav>
+              <div>  
+                <link rel="stylesheet" href="source_code/en_decode_styles.css" type="text/css">
+                  <div id="container">
+                    <label for="input">
+                      <h2><a href="https://github.com/peppermintbird/challenge-decoder" style="color: #f0eaeac9; text-decoration: none; transition: color 0.3s ease;">Night Cipher | Word Encryption</a> <span title="This tool encrypts e decrypts messages using Caesar's Cipher of a shift of three."><svg xmlns="http://www.w3.org/2000/svg" height="12" width="12" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f2f4f7" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span></h2>
+                    </label>
+                    <textarea id="input" placeholder="Enter your message..." style="font-size: 64;"></textarea>
+                    <div class="button-container">
+                      <button onclick="encode()">Encode</button>
+                      <button onclick="decode()">Decode</button>
+                    </div>
+                    <div>
+                      <textarea id="output" readonly></textarea>
+                      <div align="center"><button onclick="copy()"><svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#eceff4" d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z"/></svg></button></div>
+                    </div> 
+                  </div>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </section>
+  </main>
+  <script src="source_code/en_decode_functions.js"></script>
+</body>
+</html>
